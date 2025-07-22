@@ -1,0 +1,225 @@
+{
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+    }
+
+    body {
+        font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+        background-color: hwb(0 99% 1%);
+        color: #e90808;
+        line-height: 1.6;
+    }
+
+    a {
+        text-decoration: none;
+        color: inherit;
+    }
+
+    img {
+        max-width: 100%;
+        display: block;
+    }
+
+    /* Header */
+    header {
+        background-color: hsl(0, 94%, 51%);
+        color: hsl(0, 0%, 97%);
+        text-align: center;
+        padding: 2rem 1rem;
+        font-size: 2.5rem;
+        font-weight: bold;
+        letter-spacing: 1.5px;
+    }
+
+    /* Navigation */
+    nav {
+        background-color: hsl(0, 93%, 48%);
+        display: flex;
+        flex-wrap: wrap;
+        justify-content: center;
+        gap: 2rem;
+        padding: 1rem;
+    }
+
+    nav a {
+        font-weight: bold;
+        color: #fff;
+        transition: color 0.3s;
+    }
+
+    nav a:hover {
+        color: #00ffcc;
+    }
+
+    /* Sections */
+    section {
+        max-width: 1100px;
+        margin: auto;
+        padding: 4rem 1.5rem;
+        text-align: center;
+    }
+
+    /* About Section */
+    .about {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        background-color: #e90808;
+
+    }
+
+    .about img {
+        width: 300px;
+        border-radius: 23px;
+        margin-bottom: 1.5rem;
+    }
+
+    .about p {
+        max-width: 700px;
+        color: #ccc;
+        margin-bottom: 1.5rem;
+        font-size: 1rem;
+    }
+
+    /* Button */
+    .button {
+        padding: 0.75rem 1.5rem;
+        background-color: #070707;
+        color: #ffffff;
+        border-radius: 6px;
+        font-weight: bold;
+
+    }
+
+    .button:hover {
+        background-color: #222726;
+    }
+
+    /* Portfolio */
+    .portfolio h2,
+    .skills h2,
+    .news h2,
+    .contact h2 {
+        font-size: 2rem;
+        margin-bottom: 2rem;
+        background-color: hsl(0, 100%, 100%);
+    }
+
+    .portfolio-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+        gap: 1.5rem;
+    }
+
+    .portfolio-gallery img {
+        border-radius: 10px;
+        border: 2px solid #00ffcc;
+    }
+
+    /* Skills */
+    .skills p {
+        max-width: 700px;
+        margin: 0 auto 2rem;
+        color: #ccc;
+    }
+
+    .bar {
+        background-color: hsl(0, 4%, 25%);
+        margin: 1rem auto;
+        border-radius: 20px;
+        overflow: hidden;
+        width: 80%;
+        max-width: 500px;
+    }
+
+    .bar span {
+        display: block;
+        background-color: hsl(165, 8%, 90%);
+        color: #000;
+        padding: 0.6rem;
+        font-weight: bold;
+        border-radius: 20px 0 0 20px;
+    }
+
+    /* News */
+    .news-gallery {
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+        gap: 2rem;
+        margin-top: 2rem;
+    }
+
+    .news-gallery div {
+        background-color: #f11212;
+        padding: 1rem;
+        border-radius: 10px;
+        text-align: left;
+    }
+
+    .news-gallery p {
+        margin-top: 0.75rem;
+        color: hsl(0, 0%, 100%);
+        font-size: 0.95rem;
+    }
+
+    .contact h1 {
+        color: white;
+    }
+
+    .contact p {
+        max-width: 600px;
+        margin: 0 auto 1rem;
+        color: hsl(0, 0%, 100%);
+
+    }
+
+    form {
+        display: flex;
+        flex-direction: column;
+        gap: 1rem;
+        max-width: 500px;
+        margin: 2rem auto 0 auto;
+    }
+
+    input,
+
+    textarea {
+        padding: 0.75rem;
+        border: none;
+        border-radius: 8px;
+        font-size: 1rem;
+        background-color: #fcf9f9;
+        color: hsl(0, 6%, 15%);
+    }
+
+    textarea {
+        resize: vertical;
+    }
+
+    button[type="submit"] {
+        background-color: #000000;
+        color: #fffdfd;
+        font-weight: bold;
+        padding: 0.75rem;
+        border: none;
+        border-radius: 8px;
+        cursor: pointer;
+
+    }
+
+    button[type="submit"]:hover {
+        background-color: #151817;
+    }
+
+    /* Footer */
+    footer {
+        background-color: #ee0808;
+        color: #f8f4f4;
+        text-align: center;
+        padding: 1rem;
+        font-size: 0.9rem;
+        margin-top: 4rem;
+    }
+
+
